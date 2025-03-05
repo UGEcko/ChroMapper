@@ -321,6 +321,25 @@ public class SongInfoEditUI : MenuBase
         Debug.Log("Loading audio");
         if (File.Exists(fullPath))
         {
+            using var stream = File.OpenRead(fullPath);
+            var byteBuffer = new byte[3];
+            var numberBytesRead = stream.Read(byteBuffer, 0, 3);
+
+            // Invalid audio
+            if (numberBytesRead < 3)
+            {
+                // TODO: Make invalid audio file error message
+                SceneTransitionManager.Instance.CancelLoading("load.error.audio3");
+                yield break;
+            }
+            
+            if (IsMagicMp3Bytes(byteBuffer))
+            {
+                // TODO: Make mp3 unsupported error message
+                SceneTransitionManager.Instance.CancelLoading("load.error.audio3");
+                yield break;
+            }
+
             yield return BeatSaberSongExtensions.LoadAudio(Info,(clip) =>
             {
                 previewAudio.clip = clip;
@@ -338,6 +357,24 @@ public class SongInfoEditUI : MenuBase
             Debug.Log("Song does not exist! WTF!?");
             Debug.Log(fullPath);
         }
+    }
+
+    private static bool IsMagicMp3Bytes(byte[] byteBuffer)
+    {
+        // MPEG-1 Layer 3 file without an ID3 tag or with an ID3v1 tag
+        if (byteBuffer[0] == 0xFF)
+        {
+            if (byteBuffer[1] == 0xFB || byteBuffer[1] == 0xF3 || byteBuffer[1] == 0xF2)
+                return true;
+        }
+
+        // MP3 file with an ID3v2 container
+        if (byteBuffer[0] == 0x49 && byteBuffer[1] == 0x44 && byteBuffer[2] == 0x33)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     /// <summary>
