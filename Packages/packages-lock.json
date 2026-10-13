@@ -13,6 +13,15 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.orkunmanap.runtime-transform-handles": {
+      "version": "https://github.com/manaporkun/UnityRuntimeTransformHandles.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
+      "hash": "1f9e55a176ce98d0c468866fad2d7de964d1b2f0"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
