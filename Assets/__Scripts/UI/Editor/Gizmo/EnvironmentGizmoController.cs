@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class EnvironmentGizmoController : MonoBehaviour
 {
-    
     [SerializeField] private EnvironmentObjectColliderInput environmentObjectColliderInput;
     
     [SerializeField] private Toggle positionToggle;
