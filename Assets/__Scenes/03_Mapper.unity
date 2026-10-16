@@ -21551,10 +21551,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1255537293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.75, y: -60.25}
+  m_SizeDelta: {x: 29.5, y: 37.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &425376849
 MonoBehaviour:
@@ -21635,7 +21635,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690504214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EnvironmentGizmoController, Main
         m_MethodName: LocalSpaceToggled
         m_Mode: 1
@@ -37423,14 +37423,13 @@ GameObject:
   m_Component:
   - component: {fileID: 690504212}
   - component: {fileID: 690504213}
-  - component: {fileID: 690504214}
   m_Layer: 5
   m_Name: Environment Gizmo Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &690504212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37460,24 +37459,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690504211}
   m_CullTransparentMesh: 0
---- !u!114 &690504214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690504211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07919186507d11e48b60e64e9e392a2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Main::EnvironmentGizmoController
-  environmentObjectColliderInput: {fileID: 1430457100}
-  positionToggle: {fileID: 743314456}
-  rotationToggle: {fileID: 1836691925}
-  scaleToggle: {fileID: 2015159790}
-  worldSpaceToggle: {fileID: 1982767782}
-  localSpaceToggle: {fileID: 425376850}
 --- !u!1 &693672049
 GameObject:
   m_ObjectHideFlags: 0
@@ -39644,10 +39625,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1235913355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.75, y: -14.166667}
+  m_SizeDelta: {x: 29.5, y: 24.333334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743314455
 MonoBehaviour:
@@ -39728,7 +39709,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690504214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EnvironmentGizmoController, Main
         m_MethodName: PositionToggled
         m_Mode: 1
@@ -67112,10 +67093,10 @@ RectTransform:
   - {fileID: 2015159788}
   m_Father: {fileID: 1443241450}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.75, y: -40.5}
+  m_SizeDelta: {x: 33.5, y: 81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235913356
 MonoBehaviour:
@@ -68357,10 +68338,10 @@ RectTransform:
   - {fileID: 425376848}
   m_Father: {fileID: 1443241450}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50.25, y: -40.5}
+  m_SizeDelta: {x: 33.5, y: 81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255537294
 MonoBehaviour:
@@ -75542,17 +75523,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1430457098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eadfb8d6e2d58d747805ad36423a5eed, type: 3}
+  m_Script: {fileID: 11500000, guid: c4799e7c8d883634ba5d4abc851c0648, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Main::EnvironmentObjectColliderInput
-  _cameraManager: {fileID: 1206999167}
-  _gizmoController: {fileID: 690504214}
-  transformHandleSettings: {fileID: 11400000, guid: c6485ed2f0681724ab81b3d9ec17481a,
-    type: 2}
-  whitelistLayers:
-    serializedVersion: 2
-    m_Bits: 268451985
-  activeHandles: []
+  m_EditorClassIdentifier: Main::GizmoRenderer
+  TransformArrowPrefab: {fileID: 7108062705604179013, guid: 6e103fe390d25cb40b994b690cb67895,
+    type: 3}
+  RotationRingPrefab: {fileID: 620203698804204522, guid: 2dd8189d50aa25846b4ae96bcb031789,
+    type: 3}
+  ScaleCubePrefab: {fileID: 0}
+  OriginSpherePrefab: {fileID: 199347351683345621, guid: 9de7a4bca2f4f154c802d1d41a3b6b64,
+    type: 3}
 --- !u!1 &1432801829
 GameObject:
   m_ObjectHideFlags: 0
@@ -75934,10 +75914,10 @@ RectTransform:
   - {fileID: 1255537293}
   m_Father: {fileID: 719556026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 81}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37.5, y: -56.07}
+  m_SizeDelta: {x: 67, y: 81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1443241451
 MonoBehaviour:
@@ -96814,10 +96794,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1235913355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.75, y: -40.5}
+  m_SizeDelta: {x: 29.5, y: 24.333334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836691924
 MonoBehaviour:
@@ -96898,7 +96878,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690504214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EnvironmentGizmoController, Main
         m_MethodName: RotationToggled
         m_Mode: 1
@@ -103652,10 +103632,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1255537293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.75, y: -20.75}
+  m_SizeDelta: {x: 29.5, y: 37.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982767781
 MonoBehaviour:
@@ -103736,7 +103716,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690504214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EnvironmentGizmoController, Main
         m_MethodName: WorldSpaceToggled
         m_Mode: 1
@@ -103812,10 +103792,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 719556026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 34.57}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37.5, y: -4}
+  m_SizeDelta: {x: 67, y: 34.57}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1985069532
 MonoBehaviour:
@@ -105710,10 +105690,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1235913355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.75, y: -66.833336}
+  m_SizeDelta: {x: 29.5, y: 24.333334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015159789
 MonoBehaviour:
@@ -105794,7 +105774,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690504214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EnvironmentGizmoController, Main
         m_MethodName: ScaleToggled
         m_Mode: 1

@@ -16,5 +16,8 @@ public class GizmoCollider : MonoBehaviour
             collider.enabled = true;
             collider.enabled = true;
         }
+        
+        if (GizmoController.Renderer != null)
+            GizmoController.Renderer.RenderHandleOnTransform(transform);
     }
 }
